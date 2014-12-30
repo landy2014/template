@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 	tmod: {
 		template: {
 			src: './tpl/**/*.html',
-			dest: './dist/template.js',
+			dest: './template/template.js',
 			options: {
 				base: './tpl/', // template('tpl/index/main') >>> template('index/main')
 				combo: false,

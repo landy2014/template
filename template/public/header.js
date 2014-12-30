@@ -1,6 +1,6 @@
-/*TMODJS:{"version":4,"md5":"ce0473a53023e89f1a1e5e857e82d45a"}*/
+/*TMODJS:{"version":1,"md5":"33daaee4f0f349bc13096c8680e487cf"}*/
 define(function(require) {
-    return require("./template")("header", function($data) {
+    return require("../template")("public/header", function($data) {
         "use strict";
         var $utils = this, $escape = ($utils.$helpers, $utils.$escape), logo_url = $data.logo_url, $out = "";
         return $out += '<header> <div class="logo"><img src="', $out += $escape(logo_url), 

@@ -1,4 +1,4 @@
-/*TMODJS:{"version":4,"md5":"46b0ae8515c6b4da89fb6a660b33bda3"}*/
+/*TMODJS:{"version":1,"md5":"bf2babcea7dfe2f937a001fd62faf542"}*/
 define(function(require) {
     return require("./template")("floatList", function($data) {
         "use strict";
