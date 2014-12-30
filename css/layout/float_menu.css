@@ -1,0 +1,55 @@
+/*======================*/
+/*   右侧浮动导航
+/*======================*/
+.float-menu{
+	position:fixed;
+	z-index:9995;
+	right:0;
+	display:none;
+	width:100px;
+	height:500px;
+}
+.float-menu a{
+	display:inline-block;
+	background:url(../images/right-menu.png) no-repeat;
+}
+.float-menu a:hover{
+	text-decoration:none;
+	
+}
+.float-menu .float-menu-chat{
+	width:101px;
+	height:134px;
+	background-position:right top;
+}
+.float-menu .float-menu-qq{
+	width:101px;
+	height:132px;
+	background-position:right -135px;
+}
+.float-menu .float-menu-mobile{
+	position:relative;
+	z-index:9995;
+	width:101px;
+	height:149px;
+	background-position:right -268px;
+}
+.float-menu .float-menu-mobile .float-menu-qrcode{
+	position:absolute;
+	z-index:9994;
+	left:-84px;
+	top:0px;
+	display:none;
+	opacity:0;
+	filter:alpha(opacity=0);
+	width:185px;
+	height:149px;
+	overflow:hidden;
+	background:url(../images/right-menu.png) left -268px no-repeat;
+}
+.float-menu .float-menu-gotop{
+	width:101px;
+	height:81px;
+	background-position:right -429px;
+}
+

@@ -1,0 +1,8 @@
+<div class="nav">
+	<% for (var i=0; i<floatData.length; i++){ %>
+		<dl id="J_listA">
+			<dt><%=floatData[i].name%></dt>
+			<%include('./floatList',floatData[i])%>
+		</dl>
+	<% } %>
+</div> 

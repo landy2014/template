@@ -1,0 +1,31 @@
+   <% var l = datas.length %>
+    <% for(var i = 0; i < 1; i++) { %>
+        <div class="jdAdCol" id="jdAdCol<%= i %>">
+            <div class="jdAdCont" id="jdAdList<%= i %>">
+            <% for(var j = 0; j < l; j++) { %>
+                <% var item = datas[j] %>
+                <div class="jdContInner">
+                    <div class="jdAdImg">
+                        <a href="<%= item.data_skuurl%>" target='_blank' title="<%= item.data_skuname%>" ><img src='
+                        http://img11.360buyimg.com/n1/<%= item.data_skuimg %>' alt="<%= item.data_skuname%>图片" /></a>
+                    </div>
+                     <a href="<%= item.data_skuurl%>" target='_blank' title="<%= item.data_skuname%>" class="jdAdCover" ><img src="http://img10.360buyimg.com/da/jfs/t265/312/423396392/49/96a9210a/53eb1eabN9a8b38ae.gif" alt="<%= item.data_skuname%>" /></a>
+                    <ul>
+                        <li class="jdAdName"><%= item.data_skuname %></li>
+                        <li class="jdAdPrice jdAdCred clear">
+                        <p class="jdAdLeft">￥<span class="jdAdPrice" id="price_<%= item.data_skuid %>"><%= item.data_skuprice %></span></p>
+                        <span class='jdAdSubTag' id='rprice_<%= item.data_skuid %>'><%= item.data_skuprice %></span><span class="jdAdPromo" id="promInfo_<%= item.data_skuid %>" style='display:none'></span>
+                        </li>
+                    </ul>
+                </div>
+            <% } %>
+            </div>
+            <ul class="jdAdList" id="jdAdTags<%= i %>">
+                <% for(var j = 0; j < l; j++) { %>
+                    <% var item = datas[j] %>
+                    <li><p class='jdAdLine'><%= j + 1 %></p></li>
+                <% } %>
+            </ul>
+        </div>
+            
+    <% } %>

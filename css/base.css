@@ -1,0 +1,234 @@
+blockquote,body,code,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,pre,td,textarea,th,ul {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	font: 12px/150%;
+	font-size: 12px;
+	font-family: "microsoft Yahei",Arial
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,img {
+	border: 0
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: 400
+}
+
+caption,th {
+	text-align: left
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: 400
+}
+
+abbr,acronym {
+	border: 0;
+	font-variant: normal
+}
+
+sup {
+	vertical-align: text-top
+}
+
+sub {
+	vertical-align: text-bottom
+}
+
+input,select,textarea {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit
+}
+
+input,select {
+	vertical-align: middle;
+	border:0;
+}
+
+legend {
+	color: #000
+}
+
+a {
+	outline: 0;
+	cursor: pointer
+}
+
+a:active,a:hover,a:link,a:visited {
+	text-decoration: none
+}
+
+li,ol,ul {
+	list-style: none
+}
+
+blockquote,q {
+	quotes: none
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+	content: '';
+	content: none
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block
+}
+
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden
+}
+
+.clearfix {
+	display: inline-block
+}
+
+html[xmlns] .clearfix {
+	display: block
+}
+
+*html .clearfix {
+	height: 1%
+}
+
+.clear {
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	height: 0
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.pos-rel {
+	position: relative
+}
+
+.pos-abs {
+	position: absolute
+}
+
+.zoom {
+	zoom: 1
+}
+
+.f12 {
+	font-size: 12px
+}
+
+.f13 {
+	font-size: 13px
+}
+
+.f14 {
+	font-size: 14px
+}
+
+.f16 {
+	font-size: 16px
+}
+
+.f18 {
+	font-size: 18px
+}
+
+.f20 {
+	font-size: 20px
+}
+
+.f23 {
+	font-size: 23px
+}
+
+.f24 {
+	font-size: 24px
+}
+
+.f30 {
+	font-size: 30px
+}
+
+.tl {
+	text-align: left
+}
+
+.tc {
+	text-align: center
+}
+
+.tr {
+	text-align: right
+}
+
+.dis-none {
+	display: none
+}
+
+.dis-block {
+	display: block
+}
+.mt10 {
+	margin-top: 10px
+}
+.mt-25 {
+	margin-top: 25px
+}
+
+.mt-30 {
+	margin-top: 30px
+}
+
+.mt-35 {
+	margin-top: 35px
+}
+
+.pt-10 {
+	padding-top: 10px
+}
+
+.pt-20 {
+	padding-top: 20px
+}
+
+.pt-25 {
+	padding-top: 25px
+}
+
+.pt-30 {
+	padding-top: 30px
+}
+
+.w1070 {
+	width: 1070px
+}
+
+.w1170 {
+	width: 1170px
+}
+
+.w1190 {
+	width: 1190px;
+	margin: 0 auto
+}

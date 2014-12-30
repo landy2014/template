@@ -1,0 +1,13 @@
+{
+  "family": "lib",
+  "name": "v1",
+  "version": "1.0.0",
+  
+  "spm": {
+	 "include": "all",
+	"alias": {
+      "$": "jquery"
+    },
+    "output": ["tpl_index.js"]
+  }
+}

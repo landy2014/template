@@ -1,0 +1,174 @@
+/* 商家入驻表单页面样式 */
+.merchant-in-form{
+	width:600px;
+	margin:0 auto;
+}
+/*表单总标题*/
+.merchant-form .merchant-form-title{
+	padding-top:40px;
+}
+.merchant-form .merchant-form-title label{
+	display:inline-block;
+	width:114px;
+	height:22px;
+	overflow:hidden;
+	border-right:1px solid #000;
+	font-size:18px;
+	color:#000;
+	vertical-align:middle;
+}
+.merchant-form .merchant-form-title span{
+	display:inline-block;
+	width:480px;
+	height:38px;
+	line-height:18px;
+	word-break:break-all;
+	word-wrap:break-word;
+	font-size:12px;
+	color:#f60;
+	vertical-align:middle;
+}
+/*input列表*/
+.merchant-form-block{
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+.merchant-form-block .merchant-submit-btn{
+	display:block;
+	width:280px;
+	height:40px;
+	margin:30px auto 50px auto;
+	line-height:40px;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	color:#fff;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	text-decoration:none;
+	background-color:#f60;
+}
+.merchant-form-block .merchant-submit-btn:hover{
+	text-decoration:none;
+	background-color:#ee950a;
+}
+/*列表标题*/
+.merchant-form-block-dl .merchant-form-block-title{
+	line-height:30px;
+	font-size:12px;
+	color:#fff;
+	text-indent:20px;
+	background-color:#333;
+}
+.merchant-form-block-dl .merchant-form-block-tr{
+	padding:20px 0 0 0;
+}
+.merchant-form-tr-wrap .merchant-form-select{
+	position:relative;
+	z-index:991;
+	display:inline-block;
+	width:60px;
+	max-width:120px;
+	height:28px;
+	padding:0 23px 0 10px;
+	line-height:28px;
+	color:#333;
+	border:1px solid #b4b4b4;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	cursor:pointer;
+}
+.merchant-form-tr-wrap #J_merchantSelectProvence{
+	z-index:9993;
+}
+.merchant-form-block-dl .merchant-form-tr-wrap{
+	/*height:30px;*/
+}
+.merchant-form-block-dl .merchant-form-tr-wrap label{
+	display:inline-block;
+	width:94px;
+	text-align:right;
+	vertical-align:middle;
+}
+.merchant-form-block-dl .merchant-form-tr-wrap input{
+	vertical-align:middle;
+}
+.merchant-form-block-dl .merchant-form-tr-wrap span{
+	vertical-align:middle;
+}
+.merchant-form-block-dl .merchant-form-tr-wrap img{
+	vertical-align:middle;
+	cursor:pointer;
+}
+.merchant-form-tr-wrap .merchant-form-select label{
+	position:absolute;
+	z-index:992;
+	right:9px;
+	top:9px;
+	display:inline-block;
+	width:15px;
+	height:20px;
+	cursor:pointer;
+	background:url(../images/point-down.png) no-repeat;
+}
+/*下拉列表*/
+.merchant-form-tr-wrap .merchant-form-select #J_selectPro,.merchant-form-tr-wrap .merchant-form-select #J_selectCity,.merchant-form-tr-wrap .merchant-form-select #J_selectArea{
+	display:inline-block;
+	height:28px;
+	overflow:hidden;
+}
+.merchant-form-tr-wrap .merchant-form-select .merchant-form-hide-list{
+	position:absolute;
+	z-index:9993;
+	left:-1px;
+	top:28px;
+	display:none;
+	width:100%;
+	height:300px;
+	overflow-y:scroll;
+	border:1px solid #ccc;
+	background-color:#fff;
+}
+.merchant-form-tr-wrap .merchant-form-select .merchant-form-hide-list li{
+	text-indent:10px;
+	cursor:pointer;
+	background-color:#fff;
+}
+.merchant-form-tr-wrap .merchant-form-select .merchant-form-hide-list li:hover{
+	background-color:#ccc;
+}
+.merchant-form-tr-wrap .merchant-form-select .merchant-form-hide-list li a{
+	color:#333;
+	text-decoration:none;
+}
+.merchant-form-tr-wrap .merchant-form-select .merchant-form-hide-list li a:hover{
+	color:#333;
+	text-decoration:none;
+}
+
+.merchant-form-block-dl .merchant-form-tr-wrap .merchant-form-vcode{
+	width:93px;
+	height:28px;
+	line-height:28px;
+	color:#333;
+	border:1px solid #b4b4b4;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+}
+.merchant-form-block-dl .merchant-form-tr-wrap .merchant-form-input{
+	width:198px;
+	height:28px;
+	border:1px solid #b4b4b4;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+}
+.merchant-form-block-tr .merchant-point-red{
+	color:#f60;
+}
+.merchant-form-block-tr .merchant-form-tip{
+	height:20px;
+	text-indent:98px;
+	color:#c13d23;
+}
+

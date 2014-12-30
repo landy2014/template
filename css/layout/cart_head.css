@@ -1,0 +1,48 @@
+/* 购物车头部样式 */
+.ui-comment-head{
+	min-height:95px;
+	border-bottom: 4px solid #2f6ceb;
+}
+
+.ui-comment-head-logo{
+	width:325px;
+	height:95px;	
+}
+.ui-comment-head-text{
+	position:relative;
+	width:400px;
+	min-height:65px;
+	margin-top:15px;
+	border-left:1px solid #ccc;
+}
+.ui-comment-head-text label{
+	position:absolute;
+	z-index:992;
+	left:25px;
+	bottom:0px;
+	font-size:20px;
+	font-weight:bold;
+	color:#2f6ceb;
+	font-family:"Microsoft Yahei";
+}
+.ui-comment-head-rNav{
+	position:relative;
+	width:380px;
+	min-height:65px;
+	margin-top:15px;
+	text-align:right;
+}
+.ui-comment-head-rNav p{
+	position:absolute;
+	right:0;
+	bottom:0px;
+	color:#333;
+	font-size:14px;
+	font-family:"Microsoft Yahei";
+}
+.ui-comment-head-rNav p a{
+	color:#333;
+}
+.ui-comment-head-rNav p a:hover{
+	text-decoration:underline;
+}

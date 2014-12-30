@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<body>
+<div id="J_demo">
+
+</div>
+<script type="text/javascript" src="http://misc.jjcdn.com/p/sea-modules/js/seajs.js;jquery.js"></script>
+<!--<script src="template-native.js"></script>-->
+<script>
+var data = { 
+		"floatData" : [
+			{
+				"name" : "sdfsdf",
+				"list" : [
+					{
+						"title" : "sfsfsf",
+						"content" : "sdfsdfsdf" 
+					},
+					{
+						"title" : "sfsfsf",
+						"content" : "sdfsdfsdf" 
+					},
+					{
+						"title" : "sfsfsf",
+						"content" : "sdfsdfsdf" 
+					}
+				]	
+			},
+			{
+				"name" : "sdfsdf",
+				"list" : [
+					{
+						"title" : "sfsfsf",
+						"content" : "sdfsdfsdf" 
+					},
+					{
+						"title" : "sfsfsf",
+						"content" : "sdfsdfsdf" 
+					},
+					{
+						"title" : "sfsfsf",
+						"content" : "sdfsdfsdf" 
+					}
+				]	
+			}
+		]
+	};
+	var d = { "name" : "sfsfsfsdfs87f6s89d7f"}
+	
+seajs.config({
+	"base" : "../"	
+});
+seajs.use("build/footer",function(template){
+	
+	var html = template("footer",d);
+	console.log(html)
+	document.getElementById("J_demo").innerHTML = html;
+
+});
+
+</script>
+</body>
+</html>
