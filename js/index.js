@@ -1,13 +1,16 @@
 //seajs模块加载
 seajs.config({
-	base : "http://misc.jjcdn.com/p/sea-modules/",
-	//base : "../sea-modules/",
+	//base : "http://misc.jjcdn.com/p/sea-modules/",
+	base : "../sea-modules/",
 	alias: {
 		"$" : "jquery/jquery/1.9.1/jquery.js"
 	}
 });
 //页面代码片段
-seajs.use(["$","lib/v1/1.0.0/slider"],function($,slider){
+seajs.use(["$","lib/v1/1.0.0/slider","template/index"],function($,slider,indexTemplate){
+	var html = indexTemplate(KinHom);
+	document.getElementById("J_indexTemplateWrap").innerHTML = html;
+	
 	window.$ = $;
 	//20141218临时顶部广告
 	$("#J_adhead a").css({
@@ -138,7 +141,7 @@ $(function(){
 	
 	$(topContainer).scroll(function(e) {
 		var disH = $(window).innerHeight() - $("#J_floatMenu").height();
-		console.log(disH,$("#J_floatMenu").offset().top+disH,$("#J_floatMenu").offset().top,$("#J_recommentCon").offset().top);
+		//console.log(disH,$("#J_floatMenu").offset().top+disH,$("#J_floatMenu").offset().top,$("#J_recommentCon").offset().top);
 		if(($("#J_floatMenu").offset().top+disH >= $("#J_recommentCon").offset().top) && ($("#J_floatMenu").offset().top>0)){ 
 			initFloatMenu.init("#J_floatMenu");
 		}else{
