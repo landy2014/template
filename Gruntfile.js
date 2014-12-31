@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 	tmod: {
 		template: {
 			src: './tpl/**/*.html',
-			dest: './sea-modules/template/template.js',
+			dest: './sea-modules/template',
 			options: {
 				base: './tpl/', // template('tpl/index/main') >>> template('index/main')
 				combo: false,

@@ -7,9 +7,13 @@ seajs.config({
 	}
 });
 //页面代码片段
-seajs.use(["$","lib/v1/1.0.0/slider","template/index"],function($,slider,indexTemplate){
-	var html = indexTemplate(KinHom);
-	document.getElementById("J_indexTemplateWrap").innerHTML = html;
+seajs.use(["$","lib/v1/1.0.0/slider","template/index","template/indexTopAd"],function($,slider,indexTem,indexTopAdTem){
+	var indexContent = indexTem(KinHom);
+	var indexTopAd = indexTopAdTem(KinHom);
+	
+	document.getElementById("J_indexTemplateWrap").innerHTML = indexContent;
+	document.getElementById("J_indexTopAd").innerHTML = indexTopAd;
+	
 	
 	window.$ = $;
 	//20141218临时顶部广告
@@ -210,7 +214,7 @@ var initFloatMenu = {
 			"top" : ($(window).innerHeight() - this.obj(domId))/2 + "px",
 			"right" : (parseInt(w)-1190)/2 + "px"
 		});
-		console.log($("#J_floatMenu").offset().top);
+		//console.log($("#J_floatMenu").offset().top);
 	},	
 	showObj : function(domId){
 		$(domId).fadeIn(200);

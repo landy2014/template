@@ -1,22 +1,95 @@
+<!-- 导航 -->
+<nav>
+	<div class="head-nav w1190">
+    	<% for(var i=0; i<indexNav.length; i++){ %>
+        	<% if(indexNav[i].isAllCat==true){%>
+    			<A href="<%=indexNav[i].linkUrl%>" class="nav-all-cat"><%=indexNav[i].name%></A>
+        	<%}else{%>
+            	<%if(indexNav[i].isCur==true){ %>
+        			<A href="<%=indexNav[i].linkUrl%>" target="<%=indexNav[i].linkTarget%>" title="<%=indexNav[i].name%>" class="nav-cur"><%=indexNav[i].name%>
+                    <%if(indexNav[i].isHot==true){%><span class="hot"></span><%}%>
+                    </A>
+                <%}else{%>
+                	<A href="<%=indexNav[i].linkUrl%>" target="<%=indexNav[i].linkTarget%>" title="<%=indexNav[i].name%>" class="nav-nor"><%=indexNav[i].name%>
+                    <%if(indexNav[i].isHot==true){%><span class="hot"></span><%}%>
+                    </A>
+                <%}%>
+        	<%}%>
+        <% } %> 
+        <span class="clear"></span>
+    </div>
+</nav>
+ 
+<!-- 左侧导航 -->
+<aside class="w1190">
+	<ul class="aside-menu">
+    	<%for(var i=0; i<asideMenu.length; i++){%>
+    	<li class="aside-menu-item item-<%=i+1%>">
+        	<dl class="menu-item-cat">
+            	<dt class="menu-item-dt item-dt-<%=i+1%>">
+                	<%for(var j=0; j<asideMenu[i].asideDt.length; j++){%>
+                		<A target="_blank" href="<%=asideMenu[i].asideDt[j].linkUrl%>"><%=asideMenu[i].asideDt[j].title%></A>
+                    <%}%>
+                </dt>
+                <dd>
+                	<%for(var k=0; k<asideMenu[i].asideDd.length; k++){%>
+                		<A target="_blank" href="<%=asideMenu[i].asideDd[k].linkUrl%>"><%=asideMenu[i].asideDd[k].title%></A>
+                     <%}%>
+                </dd>
+                
+                <span class="menu-item-cat-pointr">></span>
+            </dl>
+            <div class="aside-menu-hide-menu hide-menu-<%=i+1%>">
+            	<%for(var m=0; m<asideMenu[i].hideMenu.hideList.length; m++){%>
+                <dl class="hide-menu-item">
+                    <dt class="hide-menu-item-title"><A target="_blank" href="<%=asideMenu[i].hideMenu.hideList[m].listTitle.linkUrl%>" title="<%=asideMenu[i].hideMenu.hideList[m].listTitle.seoTitle%>"><%=asideMenu[i].hideMenu.hideList[m].listTitle.title%></A></dt>
+                    <dd class="hide-menu-item-content">
+                    	<%for(var n=0; n<asideMenu[i].hideMenu.hideList[m].listSubCat.length; n++){%>     
+                        	<A target="_blank" href="<%=asideMenu[i].hideMenu.hideList[m].listSubCat[n].linkUrl%>" title="<%=asideMenu[i].hideMenu.hideList[m].listSubCat[n].seoTitle%>"><%=asideMenu[i].hideMenu.hideList[m].listSubCat[n].title%></A>
+                        <%}%>
+                    </dd>
+                    <div class="clear"></div>
+                </dl>
+                <%}%>
+                <div class="hide-menu-ad">
+                	<%for(var l=0; l<asideMenu[i].hideMenu.hideMenuAd.length; l++){%>
+                		<a href="<%=asideMenu[i].hideMenu.hideMenuAd[l].linkUrl%>" target="_blank" title="<%=asideMenu[i].hideMenu.hideMenuAd[l].title%>"><img src="<%=asideMenu[i].hideMenu.hideMenuAd[l].imgUrl%>" alt="<%=asideMenu[i].hideMenu.hideMenuAd[l].title%>" width="165" height="110" /></a>
+                    <%}%>
+                    <span class="clear"></span>
+                </div>
+            </div>
+            <div class="aside-menu-item-mark item-mark-1"></div>
+        </li> 
+        <%}%>
+    </ul>
+</aside>
+<!-- 焦点图 -->
+<section class="index-full-slide-wrap" id="J_indexFullSlideWrap">
+<script type="template" id="J_indexFullSlideTem">
+<div class="index-full-slide" id="J_indexFullSlide">
+    <div class="hd"><ul></ul></div>
+    <div class="bd">
+        <ul id="J_indexFullSlideList">
+            <% for(var i=0; i<fullSlide.length; i++){ %>
+            <li data-src="fullSlide[i].linkUrl" style="background:url(<%=fullSlide[i].imgUrl%>) center center no-repeat;"></li>
+            <%}%>
+        </ul>
+    </div>
+</div>
+</script>
+</section>
+
 <!-- 入驻品牌 -->
 <section class="w1190 pt-30">
 	<dl class="index-brand-in">
     	<dt class="index-brand-title"><label>入驻品牌</label></dt>
         <dd class="index-brand-content" id="J_brandSlider">
-        	<div class="hd">
-            	<ul></ul>
-            </div>
+        	<div class="hd"><ul></ul></div>
             <div class="bd">
             	<ul class="index-brand-slide-list">
-                	<li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
-                    <li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
-                    <li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
-                    <li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
-                    <li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
-                    <li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
-                    <li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
-                    <li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
-                    <li class="brand-slide-item"><A href="javascript:void(0);"><img src="../images/top-brand-log.jpg" width="166" height="78" alt="" /></A></li>
+                	<%for(var i=0; i<indexBrandLogo.length; i++){%>
+                		<li class="brand-slide-item"><A href="<%=indexBrandLogo[i].linkUrl%>" title="<%=indexBrandLogo[i].title%>"><img src="<%=cdnPath%>/<%=indexBrandLogo[i].imgUrl%>" width="166" height="78" alt="" /></A></li>
+                    <%}%>
                 </ul>
             </div>
             <a href="javascript:void(0);" class="prev"></a>
@@ -31,20 +104,13 @@
     	<dt class="comment-title">
         	<label>体验馆推荐</label>
             <div class="hot-tags">
-            	<a href="javascript:void(0);">舒适床垫</a>
-                <span>|</span>
-                <a href="javascript:void(0);">舒适床垫</a>
-                <span>|</span>
-                <a href="javascript:void(0);">舒适床垫</a>
+            	<a target="_blank" href="javascript:void(0);">舒适床垫</a><span>|</span>
             </div>
         </dt>
         <dd class="exper-recomment-content" id="J_recommentCon">
-        	<a href="javascript:void(0);" class="hot-pro-1"><img class="lazy" src="../images/exper-pro-1.jpg" /></a>
-            <a href="javascript:void(0);" class="hot-pro-2 bor-r bor-t"><img class="lazy" src="../images/exper-pro-2.jpg" /></a>
-            <a href="javascript:void(0);" class="hot-pro-3 bor-t"><img class="lazy" src="../images/exper-pro-3.jpg" /></a>
-            <a href="javascript:void(0);" class="hot-pro-4 bor-r bor-t"><img src="../images/exper-pro-4.jpg" /></a>
-            <a href="javascript:void(0);" class="hot-pro-5 bor-t"><img class="lazy" src="../images/exper-pro-5.jpg" /></a>
-            <a href="javascript:void(0);" class="hot-pro-6 bor-t"><img class="lazy" src="../images/exper-pro-6.jpg"	 /></a>
+        	<%for(var i=0; i<indexExper.hotList.length; i++){%>
+        		<a target="_blank" href="<%=indexExper.hotList[i].linkUrl%>" class="hot-pro-<%=i+1%>"><img class="lazy" src="<%=indexExper.hotList[i].imgUrl%>" width="<%=indexExper.hotList[i].width%>" height="<%=indexExper.hotList[i].height%>" /></a>
+            <%}%>
             <span class="icon-hot"></span>
             <div class="clear"></div>
         </dd>
@@ -54,8 +120,8 @@
 <section class="index-intro-europ mt-35">
 	<div class="w1190">
     	<div class="intro-europ-bg">
-        	<a href="#" class="intro-btn-more">查看更多</a>
-            <a href="#" class="intro-btn-custom">免费上门量尺申请</a>
+        	<a target="_blank" href="<%=indexCustom.showMoreLink%>" class="intro-btn-more">查看更多</a>
+            <a target="_blank" href="<%=indexCustom.showMoreLink%>" class="intro-btn-custom">免费上门量尺申请</a>
             <span class="intro-text">成功申请即送200元现金券</span>
         </div>
     </div>
@@ -762,6 +828,3 @@
         <div class="clear"></div>
     </dl>
 </section>
-
-
-<%include('./public/footer')%>
